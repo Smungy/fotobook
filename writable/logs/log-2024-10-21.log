@@ -1,0 +1,10 @@
+CRITICAL - 2024-10-21 15:21:44 --> ErrorException: Undefined variable $data
+[Method: GET, Route: usuarios/3/delete]
+in APPPATH\Controllers\UsuarioController.php on line 90.
+ 1 APPPATH\Controllers\UsuarioController.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\fotobook\\app\\Controllers\\UsuarioController.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->delete('3')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
