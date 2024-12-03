@@ -14,7 +14,7 @@ Informacion del Cliente
 <div class=" card-header">
     <h3 class= "card-title"> <?= $usuario["nombre"]; ?></h3>
 </div>
-git status
+
 <div class="card-body">
 
 <ul>
