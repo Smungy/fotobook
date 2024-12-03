@@ -48,6 +48,7 @@ namespace App\Controllers;
             "telefono" => $this->request->getPost("telefono"),
             "correo" => $this->request->getPost("correo"),
             "password" => $this->request->getPost("password"),
+            "usuario_id" => $this->request->getPost("usuario_id"),
         );
             
         $this->usuarioModel->save($data);

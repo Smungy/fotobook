@@ -1,7 +1,7 @@
 <?php $this->extend("plantilla"); //plantilla que usaremos ?>
 
 <?php $this->section("titulo"); ?> 
-Editar Usuario
+Editar Cliente
 <?php $this->endSection("content"); ?>
 
 <?php $this->section("content"); //aqui empieza el contenido ?>

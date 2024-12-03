@@ -22,7 +22,7 @@
                             </ul>
                         </li> -->
                         <li class="nav-item"> <a href="<?= base_url(); ?>/usuarios" class="nav-link"> <i class="bi bi-people"></i>
-                                <p>Usuarios</p>
+                                <p>Clientes</p>
                             </a> </li>
                         
                     </ul> <!--end::Sidebar Menu-->

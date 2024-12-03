@@ -1,7 +1,7 @@
 <?php $this->extend("plantilla"); //plantilla que usaremos ?>
 
 <?php $this->section("titulo"); ?> 
-Nuevo Usuario
+Nuevo Cliente
 <?php $this->endSection("content"); ?>
 
 <?php $this->section("content"); //aqui empieza el contenido ?>
@@ -39,6 +39,14 @@ Nuevo Usuario
         <label class="form-label" for="password">Password</label>
         <input class="form-control" type="password" name="password" required>           
     </div>
+
+    <!-- label para el usuario id -->
+    <div class ="mb-3">
+        <label class="form-label" for="usuario_id">Usuario ID</label>
+        <input class="form-control" type="number" name="usuario_id" required>           
+    </div>
+
+    
 
     <button class="btn btn-success" type="submit"> Crear Usuario </button>
     </form>

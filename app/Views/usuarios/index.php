@@ -1,7 +1,7 @@
 <?php $this->extend("plantilla"); //plantilla que usaremos ?>
 
 <?php $this->section("titulo"); ?> 
-Nuevo Usuario
+Nuevo Cliente
 <?php $this->endSection("content"); ?>
 
 <?php $this->section("content"); //aqui empieza el contenido ?>
@@ -13,7 +13,7 @@ Nuevo Usuario
         <div class="card-header">
             <a href="<?= base_url(); ?>/usuarios/create" 
             class= "btn btn-dark btn sm" >
-            <i class="bi bi-person-plus"> Agregar Usuario</i> 
+            <i class="bi bi-person-plus"> Agregar Cliente</i> 
         </a>
         </div>
 
@@ -27,7 +27,10 @@ Nuevo Usuario
                                                 <th>Nombre</th>
                                                 <th>Correo</th>
                                                 <th style="width: 40px">Telefono</th>
+                                                <th style="width: 10px">UsuarioID</th>
                                                 <th> Acciones </th>
+                                                
+                                                
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -39,7 +42,8 @@ Nuevo Usuario
                                                 <td> <?= $usuario["nombre"];?> </td>
                                                 <td> <?= $usuario["correo"];?> </td>
                                                 <td> <?= $usuario["telefono"];?> </td>
-                                                
+                                                <td> <?= $usuario["usuario_id"];?> </td> <!-- columna usuario id -->
+
                                                 <td> 
 
                                                 <a href="<?= base_url("/usuarios/$usuario[id]");?>"   
@@ -60,6 +64,10 @@ Nuevo Usuario
                                                     
 
                                                 </td>
+                                                  
+
+                                                
+                                                
                                             </tr>
                                             <?php endforeach;//fin foreach ?>
                                         </tbody>
